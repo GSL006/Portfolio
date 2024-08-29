@@ -157,18 +157,28 @@ export const Skills = [
     img: "https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png"
   },
   {
+    name: "",
+    quote: "",
     img: "https://upload.wikimedia.org/wikipedia/commons/1/10/Cib-next-js_%28CoreUI_Icons_v1.0.0%29.svg"
   },
   {
+    name: "",
+    quote: "",
     img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
   },
   {
+    name: "",
+    quote: "",
     img: "https://upload.wikimedia.org/wikipedia/commons/9/99/Pytorch-svgrepo-com.svg"
   },
   {
+    name: "",
+    quote: "",
     img: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg"
   },
   {
+    name: "",
+    quote: "",
     img: "https://upload.wikimedia.org/wikipedia/commons/6/67/Numpy-svgrepo-com.svg"
   },
 
