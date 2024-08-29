@@ -75,7 +75,7 @@ export const projects = [
     title: "Stock Analyser + Predictor",
     des: "Developed a stock prediction model using news data from Alpaca API and historical data from Yfinance. Achieved 89.06% accuracy with a Feedforward Neural Network, deployed in a Streamlit app for real-time stock price forecasts. Project results are documented in an upcoming research paper.",
     img: "/stock.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["https://upload.wikimedia.org/wikipedia/commons/2/20/Tensorflow-svgrepo-com.svg", "https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg", "https://upload.wikimedia.org/wikipedia/commons/6/67/Numpy-svgrepo-com.svg", "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "/stream.svg"],
     link: "https://github.com/GSL006/Stock-Predictor",
   },
   {
@@ -83,7 +83,7 @@ export const projects = [
     title: "E-Commerce Website",
     des: "Built with Next.js as the backend, Sanity for database management, and Stripe for payments and shipping. Utilizes file-based routing and data fetching methods like getServerSideProps, getStaticPaths, and getStaticProps for optimized server-side rendering and static generation. Future enhancements include integrating real payment gateways and expanding product pages..",
     img: "/ecom.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "https://upload.wikimedia.org/wikipedia/commons/9/95/Sanity-square-logo.png", "/stripe.svg"],
     link: "https://github.com/GSL006/E-commerce",
   },
   {
@@ -91,7 +91,7 @@ export const projects = [
     title: "Location Based Reminder",
     des: "Developed a web app that triggers reminders based on user location. Users set reminders with title, description, and coordinates, receiving email alerts when within 100 meters. Built with HTML, CSS, JavaScript, Leaflet.js for mapping, jQuery for interactivity, and Go for backend. Future updates may include Google's API for more accurate coordinates.",
     img: "/go.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    iconLists: ["https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg", "/js.svg", "/jq.svg", "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg", "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"],
     link: "https://github.com/Bhavesh2k4/Location-Based-Reminder-using-GO",
   },
   {
@@ -99,7 +99,7 @@ export const projects = [
     title: "Memory Lane",
     des: "Welcome to Memory Lane, where we embark on a journey through the cannals of history, providing you with a unique and immersive experience of major historical events that have shaped our world.",
     img: "/mem.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    iconLists: ["https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg", "/re.svg", "https://upload.wikimedia.org/wikipedia/commons/d/dc/Mongodb-icon.svg", "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg", "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"],
     link: "https://github.com/GSL006/Memory-Lane",
   },
 ];
