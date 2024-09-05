@@ -157,27 +157,27 @@ export const Skills = [
     img: "https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png"
   },
   {
-    name: "",
+    name: "NextJS",
     quote: "",
-    img: "https://upload.wikimedia.org/wikipedia/commons/1/10/Cib-next-js_%28CoreUI_Icons_v1.0.0%29.svg"
+    img: "https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png"
   },
   {
-    name: "",
+    name: "Git Hub",
     quote: "",
-    img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
+    img: "./git.png"
   },
   {
-    name: "",
+    name: "PyTorch",
     quote: "",
     img: "https://upload.wikimedia.org/wikipedia/commons/9/99/Pytorch-svgrepo-com.svg"
   },
   {
-    name: "",
+    name: "Pandas",
     quote: "",
     img: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg"
   },
   {
-    name: "",
+    name: "Numpy",
     quote: "",
     img: "https://upload.wikimedia.org/wikipedia/commons/6/67/Numpy-svgrepo-com.svg"
   },
