@@ -13,7 +13,7 @@ const Footer = () => {
         {/* <p className="text-white-200 md:mt-10 my-5 text-center">
           Click the link below
         </p> */}
-        <a href="https://drive.google.com/file/d/1PzyL6L5JLgcpsnz2A6uBggsB_MezPFuN/view?usp=drive_link">
+        <a href="https://drive.google.com/file/d/1RVemw0yKOk8yLAqSw6oOE8HboFv9NO7j/view?usp=sharing">
           <MagicButton
             title="View my CV"
             icon={<FaLocationArrow />}
