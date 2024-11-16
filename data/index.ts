@@ -92,15 +92,15 @@ export const projects = [
     des: "Developed a web app that triggers reminders based on user location. Users set reminders with title, description, and coordinates, receiving email alerts when within 100 meters. Built with HTML, CSS, JavaScript, Leaflet.js for mapping, jQuery for interactivity, and Go for backend. Future updates may include Google's API for more accurate coordinates.",
     img: "/go.png",
     iconLists: ["https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg", "/js.svg", "/jq.svg", "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg", "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"],
-    link: "https://github.com/Bhavesh2k4/Location-Based-Reminder-using-GO",
+    link: "https://github.com/GSL006/Location-Based-Reminder",
   },
   {
     id: 4,
-    title: "Memory Lane",
-    des: "Welcome to Memory Lane, where we embark on a journey through the cannals of history, providing you with a unique and immersive experience of major historical events that have shaped our world.",
-    img: "/mem.png",
-    iconLists: ["https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg", "/re.svg", "https://upload.wikimedia.org/wikipedia/commons/d/dc/Mongodb-icon.svg", "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg", "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"],
-    link: "https://github.com/GSL006/Memory-Lane",
+    title: "DriveIO",
+    des: "The platform is a car rental solution where users sign up as owners to rent out cars or as customers to book them. Built with Next.js, MySQL, Node.js, and Express.js, it features secure Firebase authentication and PayPal integration for payments, offering a smooth, user-friendly, and efficient experience for all.",
+    img: "/driveio.png",
+    iconLists: ["/next.svg","https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg", "/sql.svg", "/firebase.svg", "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"],
+    link: "https://github.com/GSL006/DriveIO",
   },
 ];
 
@@ -181,6 +181,11 @@ export const Skills = [
     quote: "",
     img: "https://upload.wikimedia.org/wikipedia/commons/6/67/Numpy-svgrepo-com.svg"
   },
+  {
+    name: "FireBase",
+    quote: "",
+    img: "/firebase.svg"
+  },
 
 ];
 
@@ -250,5 +255,10 @@ export const socialMedia = [
     id: 3,
     img: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Linkedin_circle.svg",
     link: "https://www.linkedin.com/in/gagan-sl-142b4b249/"
+  },
+  {
+    id: 4,
+    img: "/leetcode.svg",
+    link: "https://leetcode.com/u/GSL006/"
   },
 ];

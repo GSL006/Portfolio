@@ -15,9 +15,9 @@ const Approach = () => {
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out our goals, target audience, 
-          and key functionalities. We'll discuss things like the structure, 
-          navigation, and content requirements."
+          des="When I start a project, I focus on setting clear goals and designing the workflows, database structure, and frontend-backend 
+          communication. My priority is creating an intuitive user experience while planning for scalability to handle future growth. 
+          This phase is all about laying a solid foundation for the project."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,10 +26,11 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Building & Progress Update"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once it's done, I cue my playlist and dive into
-          coding. From initial sketches to polished code."
+          des="During development, I break the project into smaller parts, building and testing each feature step by step. I integrate tools like 
+          authentication, payment systems, and APIs while ensuring the frontend and backend work seamlessly together. Flexibility is key here,
+          allowing for adjustments and improvements as the project evolves."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -47,11 +48,11 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Testing & Launch"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building the app
-          from the ground up."
+          des="After building, I rigorously test the project to ensure everything works as expected and optimize it for performance. Once 
+          ready, I deploy it to a live environment and gather user feedback for further improvements. Post-launch, I monitor and update the 
+          system to keep it running smoothly and adapting to new needs."
         >
           <CanvasRevealEffect
             animationSpeed={3}
