@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -71,9 +70,11 @@
   * {
     @apply border-border !scroll-smooth;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   button {
     @apply active:outline-none;
   }
@@ -82,5 +83,58 @@
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
+  }
+
+  /* Custom animated purple gradient scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;
+    /* Adjust width of scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #01031a;
+    /* Light background for the track */
+    border-radius: 6px;
+  }
+
+  /* Create the animated gradient */
+  @keyframes gradientAnimation {
+    0% {
+      background: linear-gradient(to right, #610397 0%, #3a66cf 100%);
+    }
+
+    25% {
+      background: linear-gradient(to right, #9b59b6 0%, #610397 100%);
+    }
+
+    50% {
+      background: linear-gradient(to right, #3a66cf 0%, #9b59b6 100%);
+    }
+
+    75% {
+      background: linear-gradient(to right, #610397 0%, #3a66cf 100%);
+    }
+
+    100% {
+      background: linear-gradient(to right, #9b59b6 0%, #610397 100%);
+    }
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #610397 0%, #3a66cf 100%);
+    /* Initial gradient */
+    border-radius: 6px;
+    animation: gradientAnimation 3s infinite alternate;
+    /* Animate the gradient */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to right, #3a66cf 0%, #610397 100%);
+    /* Reverse gradient on hover */
+  }
+
+  ::-webkit-scrollbar-button {
+    display: none;
+    /* Hides the scrollbar buttons */
   }
 }
