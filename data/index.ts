@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Open to freelance in Web Development, Machine Learning, and Data Analytics.",
+    title: "Currently interning at PrimeTradeAI as a Blockchain Developer ",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -225,15 +225,15 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Machine Learning Research Intern",
-    desc: "Completed a research internship at the RAPID Centre, PES University, focusing on sentiment analysis and machine learning for stock market prediction, achieving 90.4% accuracy with a Feedforward Neural Network.",
+    title: "Machine Learning Research Intern(June 2024 - August 2024)",
+    desc: "Developed a research-backed project using the Alpaca API and Yfinance, classifying news articles with GENSIM and predicting stock closing prices with a Feedforward Neural Network (FNN) at 89.06% accuracy. Deployed in a Streamlit app, it generates next-day stock price forecasts using the previous 14 days of data. The project is under publication, with further optimization planned.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Competitive Programming Problem Setter",
-    desc: "Competitive Programming Problem Setter for the official Competitive Programming club CodeChef-ECC.",
+    title: "Blockchain Developer(Present)",
+    desc: "As a Blockchain Developer interning at PrimeTradeAI, I build and optimize decentralized trading systems, developing smart contracts and using Web3.js for real-time blockchain data interaction. I streamline automated trading and replace traditional Web3 interactions with live-updating CSV systems to enhance data efficiency, driving innovation in decentralized finance solutions.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },

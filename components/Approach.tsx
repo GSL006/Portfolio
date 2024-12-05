@@ -15,9 +15,7 @@ const Approach = () => {
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          des="When I start a project, I focus on setting clear goals and designing the workflows, database structure, and frontend-backend 
-          communication. My priority is creating an intuitive user experience while planning for scalability to handle future growth. 
-          This phase is all about laying a solid foundation for the project."
+          des="When I start a project, I focus on setting clear goals and designing workflows, system architecture, and communication between components. My priority is to create an intuitive user experience while planning for scalability to accommodate future growth. This approach ensures a strong foundation for any project, whether in web development, machine learning, blockchain development, or any field I pursue."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -29,7 +27,7 @@ const Approach = () => {
           title="Building & Progress Update"
           icon={<AceternityIcon order="Phase 2" />}
           des="During development, I break the project into smaller parts, building and testing each feature step by step. I integrate tools like 
-          authentication, payment systems, and APIs while ensuring the frontend and backend work seamlessly together. Flexibility is key here,
+          authentication, payment systems, and APIs while ensuring seamless communication between components. Flexibility is key here,
           allowing for adjustments and improvements as the project evolves."
         >
           <CanvasRevealEffect
