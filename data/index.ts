@@ -99,7 +99,7 @@ export const projects = [
     title: "DriveIO",
     des: "The platform is a car rental solution where users sign up as owners to rent out cars or as customers to book them. Built with Next.js, MySQL, Node.js, and Express.js, it features secure Firebase authentication and PayPal integration for payments, offering a smooth, user-friendly, and efficient experience for all.",
     img: "/driveio.png",
-    iconLists: ["/next.svg","https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg", "/sql.svg", "/firebase.svg", "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"],
+    iconLists: ["/next.svg", "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg", "/sql.svg", "/firebase.svg", "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"],
     link: "https://github.com/GSL006/DriveIO",
   },
 ];
@@ -232,7 +232,7 @@ export const workExperience = [
   },
   {
     id: 2,
-    title: "Blockchain Developer(Present)",
+    title: "Blockchain Developer(December 2024 - Present)",
     desc: "As a Blockchain Developer interning at PrimeTradeAI, I build and optimize decentralized trading systems, developing smart contracts and using Web3.js for real-time blockchain data interaction. I streamline automated trading and replace traditional Web3 interactions with live-updating CSV systems to enhance data efficiency, driving innovation in decentralized finance solutions.",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
