@@ -254,7 +254,7 @@ export const socialMedia = [
   {
     id: 3,
     img: "https://upload.wikimedia.org/wikipedia/commons/c/ce/Linkedin_circle.svg",
-    link: "https://www.linkedin.com/in/gagan-sl-142b4b249/"
+    link: "https://www.linkedin.com/in/gagan-sl/"
   },
   {
     id: 4,
