@@ -225,8 +225,8 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Machine Learning Research Intern(June 2024 - August 2024)",
-    desc: "As a Machine Learning Research Intern at RAPID based in PES University, I developed a research-backed project using the Alpaca API and Yfinance, classifying news articles with GENSIM and predicting stock closing prices with a Feedforward Neural Network (FNN) at 89.06% accuracy. Deployed in a Streamlit app, it generates next-day stock price forecasts using the previous 14 days of data. The project is under publication, with further optimization planned.",
+    title: "AI/ML Research Intern(June 2024 - August 2024)",
+    desc: "As an AI/ML Research Intern at RAPID based in PES University, I developed a research-backed project using the Alpaca API and Yfinance, classifying news articles with GENSIM and predicting stock closing prices with a Feedforward Neural Network (FNN) at 89.06% accuracy. Deployed in a Streamlit app, it generates next-day stock price forecasts using the previous 14 days of data. The project is under publication, with further optimization planned.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },

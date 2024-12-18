@@ -57,7 +57,7 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Gagan, a Machine Learning enthusiast and Web Developer.
+            Hi! I&apos;m Gagan, an AI/ML enthusiast and Web Developer.
           </p>
 
           <a href="#projects">
