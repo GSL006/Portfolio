@@ -225,15 +225,15 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "AI/ML Research Intern(June 2024 - August 2024)",
-    desc: "As an AI/ML Research Intern at RAPID based in PES University, I developed a research-backed project using the Alpaca API and Yfinance, classifying news articles with GENSIM and predicting stock closing prices with a Feedforward Neural Network (FNN) at 89.06% accuracy. Deployed in a Streamlit app, it generates next-day stock price forecasts using the previous 14 days of data. The project is under publication, with further optimization planned.",
+    title: "AI/ML Research Intern",
+    desc: "June 2024 - August 2024 @ RAPID, PES University",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Blockchain Developer(December 2024 - Present)",
-    desc: "As a Blockchain Developer interning at PrimeTradeAI, I build and optimize decentralized trading systems, developing smart contracts and using Web3.js for real-time blockchain data interaction. I streamline automated trading and replace traditional Web3 interactions with live-updating CSV systems to enhance data efficiency, driving innovation in decentralized finance solutions.",
+    title: "Blockchain Developer",
+    desc: "December 2024 - Present @ PrimeTradeAI",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
