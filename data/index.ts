@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Upcoming C++ Developer(Intern) at GoQuant",
+    title: "Upcoming Back-End Developer(Intern) at GoQuant",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
