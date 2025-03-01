@@ -233,7 +233,7 @@ export const workExperience = [
   {
     id: 2,
     title: "Blockchain Developer",
-    desc: "December 2024 - Present @ AnythingAI",
+    desc: "December 2024 - March 2025 @ AnythingAI",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
