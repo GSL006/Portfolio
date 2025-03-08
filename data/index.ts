@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Upcoming Back-End Developer(Intern) at GoQuant",
+    title: "Working on a trasformer based method for stock prediction instead of traditional LSTM models",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -236,6 +236,13 @@ export const workExperience = [
     desc: "December 2024 - March 2025 @ AnythingAI",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Back-End Developer",
+    desc: "March 2025 - Present @ GoQuant",
+    className: "md:col-span-2",
+    thumbnail: "/exp3.svg",
   },
 
 ];
