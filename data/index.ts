@@ -75,7 +75,7 @@ export const projects = [
     title: "StockGEN",
     des: "Developed a transformer based stock price/trend prediction model and Confidence + Recommendation using T5-flan.",
     img: "/stock.png",
-    iconLists: ["https://upload.wikimedia.org/wikipedia/commons/9/99/Pytorch-svgrepo-com.svg", "/hf-logo.svg", "/flask.svg", "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "/stream.svg"],
+    iconLists: ["https://upload.wikimedia.org/wikipedia/commons/9/99/Pytorch-svgrepo-com.svg", "/hf-logo.svg", "/flask.png", "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "/stream.svg"],
     link: "https://github.com/GSL006/Stock-Predictor-v2",
   },
   {
@@ -188,7 +188,7 @@ export const Skills = [
   {
     name: "Flask",
     quote: "",
-    img: "/flask_large.png"
+    img: "/flask.png"
   },
   {
     name: "Stripe",
