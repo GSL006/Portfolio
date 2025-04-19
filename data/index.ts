@@ -72,11 +72,11 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Stock Analyser + Predictor",
-    des: "Developed a stock prediction model using news data from Alpaca API and historical data from Yfinance. Achieved 89.06% accuracy with a Feedforward Neural Network, deployed in a Streamlit app for real-time stock price forecasts. Project results are documented in an upcoming research paper.",
+    title: "StockGEN",
+    des: "Developed a transformer based stock price/trend prediction model and Confidence + Recommendation using T5-flan.",
     img: "/stock.png",
-    iconLists: ["https://upload.wikimedia.org/wikipedia/commons/2/20/Tensorflow-svgrepo-com.svg", "https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg", "https://upload.wikimedia.org/wikipedia/commons/6/67/Numpy-svgrepo-com.svg", "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "/stream.svg"],
-    link: "https://github.com/GSL006/Stock-Predictor",
+    iconLists: ["https://upload.wikimedia.org/wikipedia/commons/9/99/Pytorch-svgrepo-com.svg", "/hf-logo.svg", "/flask.svg", "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "/stream.svg"],
+    link: "https://github.com/GSL006/Stock-Predictor-v2",
   },
   {
     id: 2,
@@ -107,53 +107,52 @@ export const projects = [
 export const Skills = [
   {
     name: "Python",
-    quote:
-      "Known for its versatility and ease of use, Python is ideal for data analysis, machine learning, web development, automation, and scripting. Its extensive libraries, like NumPy, Pandas, and TensorFlow, enhance its capabilities in various fields.",
+    quote:"",
     img: "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg",
   },
   {
     name: "Java",
-    quote: "A robust, object-oriented language used extensively in enterprise environments, Android app development, and backend services. Java's strong memory management, portability, and scalability make it suitable for large-scale applications.",
+    quote:"",
     img: "/java-icon.svg"
   },
   {
     name: "C/C++",
-    quote: "Provides low-level access to memory and system resources, which is critical for performance-intensive applications such as operating systems, game development, and high-frequency trading systems. C++ builds on C with object-oriented features and enhanced abstraction.",
+    quote:"",
     img: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg"
   },
   {
     name: "SQL",
-    quote: "Essential for database management, SQL enables users to efficiently query, update, and manage relational databases. It supports complex queries, transactions, and data manipulation, making it vital for backend development and data analytics.",
+    quote:"",
     img: "/sql.svg"
   },
   {
     name: "JS",
-    quote: "A core technology for web development, JavaScript enables interactive elements on web pages, such as animations, dynamic content updates, and client-side validation. It's essential for modern web development frameworks and libraries.",
+    quote:"",
     img: "/js.svg"
   },
   {
     name: "R",
-    quote: " Specialized for statistical analysis and graphical representation, R is commonly used in data science, research, and academia. It offers a wide range of statistical and data manipulation packages.",
+    quote:"",
     img: "https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg",
   },
   {
     name: "Go",
-    quote: "Known for its simplicity and efficiency, Go is used in building scalable web servers, distributed systems, and cloud services. Its strong concurrency support and performance make it a popular choice for backend development.",
+    quote:"",
     img: "https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg",
   },
   {
     name: "scikit-learn",
-    quote: "A Python library providing simple and efficient tools for data mining and machine learning. It includes algorithms for classification, regression, clustering, and dimensionality reduction, making it a versatile choice for machine learning tasks.",
+    quote:"",
     img: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
   },
   {
     name: "TensorFlow/Keras",
-    quote: "TensorFlow is a comprehensive framework for building machine learning models, and Keras is its high-level API for easy model development. They are widely used for training and deploying deep learning models.",
+    quote:"",
     img: "https://upload.wikimedia.org/wikipedia/commons/2/20/Tensorflow-svgrepo-com.svg"
   },
   {
     name: "MERN",
-    quote: "A popular stack for building full-stack web applications using JavaScript. MongoDB is a NoSQL database, Express.js is a backend framework, React is a frontend library, and Node.js is a runtime environment for server-side code.",
+    quote:"",
     img: "https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png"
   },
   {
@@ -186,7 +185,31 @@ export const Skills = [
     quote: "",
     img: "/firebase.svg"
   },
-
+  {
+    name: "Flask",
+    quote: "",
+    img: "/flask.svg"
+  },
+  {
+    name: "Stripe",
+    quote: "",
+    img: "/stripe.svg"
+  },
+  {
+    name: "Docker",
+    quote: "",
+    img: "/dock.svg"
+  },
+  {
+    name: "Stream",
+    quote: "",
+    img: "/stream.svg"
+  },
+  {
+    name: "Hugging Face",
+    quote: "",
+    img: "/hf-logo.svg"
+  }
 ];
 
 export const companies = [
