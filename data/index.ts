@@ -188,7 +188,7 @@ export const Skills = [
   {
     name: "Flask",
     quote: "",
-    img: "/flask.svg"
+    img: "/flask_large.png"
   },
   {
     name: "Stripe",
