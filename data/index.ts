@@ -299,6 +299,6 @@ export const socialMedia = [
   {
     id: 6,
     img: "/gmail.svg",
-    link: "mailto:gagan62004@gmail.com"
+    link: "https://mail.google.com/mail/?view=cm&to=gagan62004@gmail.com"
   }
 ];
