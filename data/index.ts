@@ -292,11 +292,6 @@ export const socialMedia = [
     link: "https://leetcode.com/u/GSL006/"
   },
   {
-    id: 5,
-    img: "/wha.svg",
-    link: "https://wa.me/+919008453792"
-  },
-  {
     id: 6,
     img: "/gmail.svg",
     link: "https://mail.google.com/mail/?view=cm&to=gagan62004@gmail.com"
