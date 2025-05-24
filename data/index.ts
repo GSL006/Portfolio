@@ -80,10 +80,10 @@ export const projects = [
   },
   {
     id: 2,
-    title: "E-Commerce Website",
-    des: "Built with Next.js as the backend, Sanity for database management, and Stripe for payments and shipping. Utilizes file-based routing and data fetching methods like getServerSideProps, getStaticPaths, and getStaticProps for optimized server-side rendering and static generation. Future enhancements include integrating real payment gateways and expanding product pages..",
-    img: "/ecom.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "https://upload.wikimedia.org/wikipedia/commons/9/95/Sanity-square-logo.png", "/stripe.svg"],
+    title: "Micro Trend Hunter",
+    des: "Engineered an automated micro-trend detection pipeline processing 20-50 AI news articles hourly, clustering with HDBSCAN and scoring microtrends via time-decay velocity",
+    img: "/mic_trend.png",
+    iconLists: ["https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "./git.png", "https://upload.wikimedia.org/wikipedia/commons/9/99/Pytorch-svgrepo-com.svg", "https://upload.wikimedia.org/wikipedia/commons/2/20/Tensorflow-svgrepo-com.svg", "https://upload.wikimedia.org/wikipedia/commons/6/67/Numpy-svgrepo-com.svg"],
     link: "https://github.com/GSL006/E-commerce",
   },
   {
