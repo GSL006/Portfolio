@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Working on MicroTrendHunter",
+    title: "Exploring project ideas to work on",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -80,11 +80,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Micro Trend Hunter",
+    title: "AI Micro Trend Hunter",
     des: "Engineered an automated micro-trend detection pipeline processing 20-50 AI news articles hourly, clustering with HDBSCAN and scoring microtrends via time-decay velocity",
     img: "/mic_trend.png",
-    iconLists: ["https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "./git.png", "https://upload.wikimedia.org/wikipedia/commons/9/99/Pytorch-svgrepo-com.svg", "https://upload.wikimedia.org/wikipedia/commons/2/20/Tensorflow-svgrepo-com.svg", "https://upload.wikimedia.org/wikipedia/commons/6/67/Numpy-svgrepo-com.svg"],
-    link: "https://github.com/GSL006/E-commerce",
+    iconLists: ["https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "./git.svg", "/gnews.png", "/hackernews.png", "https://upload.wikimedia.org/wikipedia/commons/6/67/Numpy-svgrepo-com.svg"],
+    link: "https://github.com/GSL006/AI_Micro_Trend_Hunter",
   },
   {
     id: 3,
