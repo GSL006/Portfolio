@@ -173,7 +173,7 @@ export const Skills = [
   {
     name: "Pandas",
     quote: "",
-    img: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Pandas_logo.svg"
+    img: "/pandas.png"
   },
   {
     name: "Numpy",
