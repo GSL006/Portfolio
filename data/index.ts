@@ -83,7 +83,7 @@ export const projects = [
     title: "AI Micro Trend Hunter",
     des: "Engineered an automated micro-trend detection pipeline processing 20-50 AI news articles hourly, clustering with HDBSCAN and scoring microtrends via time-decay velocity",
     img: "/mic_trend.png",
-    iconLists: ["https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "./git.svg", "/gnews.png", "/hackernews.png", "https://upload.wikimedia.org/wikipedia/commons/6/67/Numpy-svgrepo-com.svg"],
+    iconLists: ["https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "./git.svg", "/gnews.png", "/hackernews.png", "/hf-logo.svg"],
     link: "https://github.com/GSL006/AI_Micro_Trend_Hunter",
   },
   {
