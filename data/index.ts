@@ -267,6 +267,13 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
+  {
+    id: 4,
+    title: "Data Structures and Algorithms Teaching Assistant",
+    desc: "July 2025 - Present @ PES University",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
+  },
 
 ];
 
