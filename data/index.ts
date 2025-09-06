@@ -269,7 +269,7 @@ export const workExperience = [
   },
   {
     id: 4,
-    title: "Data Structures and Algorithms Teaching Assistant",
+    title: "Data Structures and Algorithms Teaching Assistant Head",
     desc: "July 2025 - Present @ PES University",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
