@@ -209,6 +209,11 @@ export const Skills = [
     name: "Hugging Face",
     quote: "",
     img: "/hf-logo.svg"
+  },
+  {
+    name: "FastAPI",
+    quote: "",
+    img: "/fastapi.png"
   }
 ];
 
