@@ -213,7 +213,7 @@ export const Skills = [
   {
     name: "FastAPI",
     quote: "",
-    img: "/fastapi.png"
+    img: "/fastapi.svg"
   }
 ];
 
