@@ -92,7 +92,7 @@ export const InfiniteMovingCards = ({
 
       {/* Skill Name Tooltip */}
       <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50">
-        <span className="text-white text-sm font-medium whitespace-nowrap bg-purple/90 px-3 py-1.5 rounded-lg shadow-lg">
+        <span className="text-white text-sm font-medium whitespace-nowrap bg-[#8B5CF6] px-3 py-1.5 rounded-lg shadow-lg">
           {item.name}
         </span>
       </div>
