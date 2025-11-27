@@ -26,7 +26,10 @@ export const InfiniteMovingCards = ({
   const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    addAnimation();
+    const timer = setTimeout(() => {
+      addAnimation();
+    }, 100);
+    return () => clearTimeout(timer);
   }, []);
 
   function addAnimation() {
@@ -60,7 +63,7 @@ export const InfiniteMovingCards = ({
     if (scrollerRef.current) {
       scrollerRef.current.style.setProperty(
         "--animation-duration",
-        speed === "fast" ? "20s" : speed === "normal" ? "30s" : "40s"
+        speed === "fast" ? "10s" : speed === "normal" ? "10s" : "25s"
       );
     }
   };
@@ -112,9 +115,9 @@ export const InfiniteMovingCards = ({
         style={{
           display: "flex",
           animation: start
-            ? `scroll var(--animation-duration, 40s) linear infinite`
+            ? `scroll ${speed === "fast" ? "10s" : speed === "normal" ? "10s" : "25s"} linear infinite`
             : "none",
-          animationDirection: "var(--animation-direction, normal)",
+          animationDirection: direction === "left" ? "normal" : "reverse",
           animationPlayState: isPaused ? "paused" : "running",
         }}
       >
