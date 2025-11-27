@@ -162,7 +162,7 @@ export const BentoGridItem = ({
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
           <div className={`font-sans z-10 ${
-            id === 1 ? 'text-white font-semibold md:text-sm lg:text-lg text-base md:max-w-lg mb-3 drop-shadow-lg' : 'font-extralight text-[#C1C2D3] md:text-xs lg:text-base text-sm md:max-w-32'
+            id === 1 ? 'text-gray-300 font-semibold md:text-sm lg:text-lg text-base md:max-w-lg mb-3 drop-shadow-lg' : 'font-extralight text-[#C1C2D3] md:text-xs lg:text-base text-sm md:max-w-32'
           }`}>
             {description}
           </div>
