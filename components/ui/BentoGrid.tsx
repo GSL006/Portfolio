@@ -157,7 +157,7 @@ export const BentoGridItem = ({
           className={cn(
             titleClassName,
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10",
-            id === 1 && "bg-black/60 backdrop-blur-sm rounded-2xl"
+            id === 1 && "bg-black/40 backdrop-blur-md rounded-2xl -ml-2 -mr-2 md:-ml-4 md:-mr-4"
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
