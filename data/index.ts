@@ -1,5 +1,6 @@
 export const navItems = [
   { name: "About", link: "#about" },
+  { name: "Education", link: "#education" },
   { name: "Projects", link: "#projects" },
   { name: "Skills", link: "#Skills" },
   { name: "Experience", link: "#experience" },
@@ -279,6 +280,36 @@ export const companies = [
     name: "docker.",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
+  },
+];
+
+export const education = [
+  {
+    id: 1,
+    degree: "Bachelor of Technology",
+    field: "Computer Science",
+    institution: "PES University",
+    location: "Bangalore, Karnataka",
+    duration: "Sep 2022 - Present",
+    icon: "/pes.png",
+  },
+  {
+    id: 2,
+    degree: "Pre-University",
+    field: "Grade 11 - 12",
+    institution: "BASE PU College",
+    location: "Bangalore, Karnataka",
+    duration: "May 2020 - May 2022",
+    icon: "/base.png",
+  },
+  {
+    id: 3,
+    degree: "School Education",
+    field: "Grade 1 - 10",
+    institution: "Clarence Public School",
+    location: "Bangalore, Karnataka",
+    duration: "April 2010 - April 2020",
+    icon: "/clarence.jpg",
   },
 ];
 

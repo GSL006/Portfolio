@@ -92,9 +92,12 @@ export const InfiniteMovingCards = ({
 
       {/* Skill Name Tooltip */}
       <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50">
-        <span className="text-white text-sm font-medium whitespace-nowrap bg-[#8B5CF6] px-3 py-1.5 rounded-lg shadow-lg">
-          {item.name}
-        </span>
+        <div className="relative inline-flex overflow-hidden rounded-lg p-[1px]">
+          <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+          <span className="relative inline-flex items-center justify-center rounded-lg bg-slate-950 px-3 py-1.5 text-sm font-medium text-white whitespace-nowrap">
+            {item.name}
+          </span>
+        </div>
       </div>
     </li>
   );

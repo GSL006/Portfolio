@@ -100,25 +100,12 @@ const Experience = () => {
                 />
                 
                 {/* Logo Circle with Moving Border */}
-                <div className="relative z-20 w-24 h-24 md:w-32 md:h-32">
-                  {/* Rotating Border Effect */}
-                  <motion.div
-                    className="absolute inset-0 rounded-full"
-                    style={{
-                      background: "conic-gradient(from 0deg, transparent 0%, transparent 60%, rgba(203, 172, 249, 1) 75%, rgba(203, 172, 249, 0.8) 85%, transparent 100%)",
-                    }}
-                    animate={{
-                      rotate: 360,
-                    }}
-                    transition={{
-                      duration: 3,
-                      repeat: Infinity,
-                      ease: "linear",
-                    }}
-                  />
+                <div className="relative z-20 w-24 h-24 md:w-32 md:h-32 overflow-hidden rounded-full p-[2px]">
+                  {/* Animated border - same as Show my work button */}
+                  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
 
                   {/* Inner Circle Container */}
-                  <div className="absolute inset-[4px] rounded-full bg-black flex items-center justify-center shadow-[0_0_20px_rgba(203,172,249,0.4)] p-2">
+                  <div className="relative w-full h-full rounded-full bg-black flex items-center justify-center p-2">
                     <img
                       src={card.thumbnail}
                       alt={card.title}
