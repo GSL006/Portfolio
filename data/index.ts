@@ -5,18 +5,18 @@ export const navItems = [
   { name: "Experience", link: "#experience" },
   { name: "GitHub", link: "#github" },
   { name: "Approach", link: "#approach" },
-  { name: "CV/Resume", link: "#resume" },
+  { name: "Resume", link: "#resume" },
 ];
 
 export const gridItems = [
   {
     id: 1,
     title: "Dedicated to clear communication and effective collaboration",
-    description: "",
+    description: "Building bridges between ideas and implementation through transparent teamwork",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/loop.mp4",
     spareImg: "",
   },
   {
