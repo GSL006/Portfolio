@@ -2,6 +2,7 @@ export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
   { name: "Skills", link: "#Skills" },
+  { name: "GitHub", link: "#github" },
   { name: "CV/Resume", link: "#resume" },
 ];
 
@@ -18,7 +19,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Adaptable and responsive to evolving project needs",
+    title: "IST timezone · EST-friendly hours · Available till 1 AM",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -49,7 +50,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Exploring project ideas to work on",
+    title: "Leading OTC Integrations at GoQuant",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -257,6 +258,13 @@ export const workExperience = [
     desc: "June 2024 - August 2024 @ RAPID, PES University",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
+    details: [
+      "Designed a news-aware stock price prediction pipeline by combining Alpaca and YFinance APIs for historical and real-time news data; performed NLP preprocessing using spaCy and TF-IDF.",
+      "Applied LDA topic modeling via GENSIM on 100,000 news articles to extract dominant market themes and engineered these topics into input features for supervised learning.",
+      "Trained and evaluated multiple models (Linear Regression, FNN, Decision Trees), achieving 89.06% accuracy on FNN within a ±$5 margin, outperforming baselines by 15%.",
+      "Deployed the entire pipeline into a Streamlit app with live predictions, model switcher, and interpretability module to visualize news influence on predictions.",
+      "Authored a research paper detailing methodology, results, and limitations."
+    ],
   },
   {
     id: 2,
@@ -264,6 +272,12 @@ export const workExperience = [
     desc: "December 2024 - March 2025 @ AnythingAI",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
+    details: [
+      "Built an automated trading system for decentralized platforms, replicating top 100 traders' strategies using a headless browser scraper; initially stored strategy data in CSVs and Google Sheets, later migrated to PostgreSQL for better performance, scalability, and query efficiency.",
+      "Developed a lightweight cryptocurrency trading bot for Binance using the official Binance API, capable of executing up to 1000 trades per day; implemented trade validation logic, signal-based triggers, and daily activity summaries in Google Docs.",
+      "Integrated APIs for real-time price feeds and historical trade data, enabling the bot to make reactive decisions based on current market trends.",
+      "Conducted performance tuning and debugging to maintain sub-second latency per trade; monitored throughput and downtime using Google App Scripts and alerting dashboards."
+    ],
   },
   {
     id: 3,
@@ -271,6 +285,12 @@ export const workExperience = [
     desc: "March 2025 - Present @ GoQuant",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
+    details: [
+      "Engineer low-latency, high-throughput trading systems for global exchanges (e.g., BitMEX, Binance, OKX, Hercle) by designing reusable back-end modules for order routing, position tracking, and slippage management, and collaborating on multi-account OMS logic and high-frequency order placement systems to ensure fault tolerance, precision, compliance, and scalability across microservices.",
+      "Built and optimized real-time OTC (Over The Counter) trading flows (RFQ, RFS) using FastAPI, async I/O, and WebSocket streaming, while leading the integration of 20+ crypto-native OTC exchanges to streamline onboarding and expand liquidity access across the platform.",
+      "Contribute to GoMarket-CPP, a high-performance WebSocket/REST gateway for fetching market data and symbol information from multiple exchanges, providing unified, low-latency data access that powers the product's orderbook.",
+      "Maintain and expand GQ-Docs, the core documentation platform for GoQuant, by adding detailed OTC exchange integrations, improving clarity and structure, and continuously updating it with new features and products introduced into the ecosystem."
+    ],
   },
   {
     id: 4,
@@ -278,6 +298,12 @@ export const workExperience = [
     desc: "July 2025 - Present @ PES University",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
+    details: [
+      "Lead a team of teaching assistants in supporting DSA course.",
+      "Conduct weekly lab sessions and doubt-clearing workshops.",
+      "Design and grade assignments, quizzes, and coding assessments.",
+      "Mentor students on algorithm optimization and problem-solving techniques."
+    ],
   },
 
 ];
@@ -306,7 +332,7 @@ export const socialMedia = [
   {
     id: 6,
     img: "/gmail.svg",
-    link: "https://mail.google.com/mail/?view=cm&to=gagan62004@gmail.com"
+    link: "https://mail.google.com/mail/?view=cm&to=gagansl62004@gmail.com"
   }
 ];
 

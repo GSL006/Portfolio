@@ -4,7 +4,17 @@ import { IoCopyOutline } from "react-icons/io5";
 // Also install this npm i --save-dev @types/react-lottie
 import dynamic from "next/dynamic";
 
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
+const Lottie = dynamic(() => import("react-lottie").then(mod => {
+  // Wrapper to prevent unmount errors
+  const LottieComponent = (props: any) => {
+    try {
+      return <mod.default {...props} />;
+    } catch (e) {
+      return null;
+    }
+  };
+  return LottieComponent;
+}), { ssr: false });
 
 import { cn } from "@/lib/utils";
 
@@ -60,8 +70,8 @@ export const BentoGridItem = ({
   const [copied, setCopied] = useState(false);
 
   const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
+    loop: false,
+    autoplay: true,
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -69,10 +79,12 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "gagan62004@gmail.com";
+    const text = "gagansl62004@gmail.com";
     if (typeof navigator !== 'undefined' && navigator.clipboard) {
       navigator.clipboard.writeText(text);
       setCopied(true);
+      // Reset after 3 seconds
+      setTimeout(() => setCopied(false), 3000);
     }
   };
 
