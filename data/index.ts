@@ -286,7 +286,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "https://upload.wikimedia.org/wikipedia/commons/2/24/Github_logo_svg.svg",
-    link: "https://github.com/GSL006"
+    link: "https://github.com/gagan-sl6"
   },
   {
     id: 2,
@@ -309,3 +309,8 @@ export const socialMedia = [
     link: "https://mail.google.com/mail/?view=cm&to=gagan62004@gmail.com"
   }
 ];
+
+export const githubContributions = {
+  username: "gagan-sl6",
+  profileUrl: "https://github.com/gagan-sl6",
+};

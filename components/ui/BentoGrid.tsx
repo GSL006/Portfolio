@@ -2,7 +2,9 @@ import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic";
+
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 import { cn } from "@/lib/utils";
 
@@ -67,9 +69,11 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "gagansl62004@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+    const text = "gagan62004@gmail.com";
+    if (typeof navigator !== 'undefined' && navigator.clipboard) {
+      navigator.clipboard.writeText(text);
+      setCopied(true);
+    }
   };
 
   return (
@@ -175,13 +179,12 @@ export const BentoGridItem = ({
               {/* add rounded-md h-8 md:h-8, remove rounded-full */}
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
+              {copied && (
+                <div className="absolute -bottom-5 right-0">
+                  {/* <img src="/confetti.gif" alt="confetti" /> */}
+                  <Lottie options={defaultOptions} height={200} width={400} />
+                </div>
+              )}
 
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
