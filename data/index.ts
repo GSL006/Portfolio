@@ -286,7 +286,7 @@ export const workExperience = [
     title: "AI/ML Research Intern",
     desc: "June 2024 - August 2024 @ RAPID, PES University",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/pes.png",
     details: [
       "Designed a news-aware stock price prediction pipeline by combining Alpaca and YFinance APIs for historical and real-time news data; performed NLP preprocessing using spaCy and TF-IDF.",
       "Applied LDA topic modeling via GENSIM on 100,000 news articles to extract dominant market themes and engineered these topics into input features for supervised learning.",
@@ -300,7 +300,7 @@ export const workExperience = [
     title: "Blockchain Developer",
     desc: "December 2024 - March 2025 @ AnythingAI",
     className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
+    thumbnail: "/anythingai.jpg",
     details: [
       "Built an automated trading system for decentralized platforms, replicating top 100 traders' strategies using a headless browser scraper; initially stored strategy data in CSVs and Google Sheets, later migrated to PostgreSQL for better performance, scalability, and query efficiency.",
       "Developed a lightweight cryptocurrency trading bot for Binance using the official Binance API, capable of executing up to 1000 trades per day; implemented trade validation logic, signal-based triggers, and daily activity summaries in Google Docs.",
@@ -313,7 +313,7 @@ export const workExperience = [
     title: "Back-End Developer",
     desc: "March 2025 - Present @ GoQuant",
     className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
+    thumbnail: "/goquant.webp",
     details: [
       "Engineer low-latency, high-throughput trading systems for global exchanges (e.g., BitMEX, Binance, OKX, Hercle) by designing reusable back-end modules for order routing, position tracking, and slippage management, and collaborating on multi-account OMS logic and high-frequency order placement systems to ensure fault tolerance, precision, compliance, and scalability across microservices.",
       "Built and optimized real-time OTC (Over The Counter) trading flows (RFQ, RFS) using FastAPI, async I/O, and WebSocket streaming, while leading the integration of 20+ crypto-native OTC exchanges to streamline onboarding and expand liquidity access across the platform.",
@@ -326,7 +326,7 @@ export const workExperience = [
     title: "Data Structures and Algorithms Teaching Assistant Head",
     desc: "July 2025 - Present @ PES University",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/pes.png",
     details: [
       "Lead a team of teaching assistants in supporting DSA course.",
       "Conduct weekly lab sessions and doubt-clearing workshops.",

@@ -105,7 +105,7 @@ const Experience = () => {
                   <motion.div
                     className="absolute inset-0 rounded-full"
                     style={{
-                      background: "conic-gradient(from 0deg, transparent 0%, transparent 70%, rgba(203, 172, 249, 1) 85%, rgba(203, 172, 249, 0.3) 100%)",
+                      background: "conic-gradient(from 0deg, transparent 0%, transparent 60%, rgba(203, 172, 249, 1) 75%, rgba(203, 172, 249, 0.8) 85%, transparent 100%)",
                     }}
                     animate={{
                       rotate: 360,
@@ -118,11 +118,11 @@ const Experience = () => {
                   />
 
                   {/* Inner Circle Container */}
-                  <div className="absolute inset-[3px] rounded-full bg-black-100 flex items-center justify-center shadow-[0_0_20px_rgba(203,172,249,0.4)]">
+                  <div className="absolute inset-[4px] rounded-full bg-black flex items-center justify-center shadow-[0_0_20px_rgba(203,172,249,0.4)] p-2">
                     <img
                       src={card.thumbnail}
                       alt={card.title}
-                      className="w-14 h-14 md:w-20 md:h-20 object-contain"
+                      className="w-14 h-14 md:w-20 md:h-20 object-contain rounded-full"
                     />
                   </div>
                 </div>
