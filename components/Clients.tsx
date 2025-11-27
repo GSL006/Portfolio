@@ -1,33 +1,39 @@
-
 "use client";
 
 import React from "react";
-
-import { companies, Skills } from "@/data";
+import { Skills } from "@/data";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
 
 const Clients = () => {
-    return (
-        <section id="Skills" className="py-20">
-            <h1 className="heading">
-                Explore My
-                <span className="text-purple"> Skill-Set</span>
-            </h1>
+  // Split skills into two rows for dynamic effect
+  const midPoint = Math.ceil(Skills.length / 2);
+  const firstRow = Skills.slice(0, midPoint);
+  const secondRow = Skills.slice(midPoint);
 
-            <div className="flex flex-col items-center max-lg:mt-10">
-                <div
-                    // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design
-                    className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
-                >
-                    <InfiniteMovingCards
-                        items={Skills}
-                        direction="right"
-                        speed="slow"
-                    />
-                </div>
-            </div>
-        </section>
-    );
+  return (
+    <section id="Skills" className="py-20 w-full">
+      <h1 className="heading">
+        Explore My
+        <span className="text-purple"> Skill-Set</span>
+      </h1>
+
+      <div className="flex flex-col mt-16 gap-8 w-screen relative left-[50%] right-[50%] -mx-[50vw]">
+        {/* First Row - Moving Left to Right */}
+        <InfiniteMovingCards
+          items={firstRow}
+          direction="left"
+          speed="normal"
+        />
+
+        {/* Second Row - Moving Right to Left */}
+        <InfiniteMovingCards
+          items={secondRow}
+          direction="right"
+          speed="normal"
+        />
+      </div>
+    </section>
+  );
 };
 
 export default Clients;

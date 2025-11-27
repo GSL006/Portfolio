@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
+  speed = "slow",
   pauseOnHover = true,
   className,
 }: {
@@ -20,19 +20,20 @@ export const InfiniteMovingCards = ({
   pauseOnHover?: boolean;
   className?: string;
 }) => {
+  const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
+  const [start, setStart] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
     addAnimation();
   }, []);
 
-  const [start, setStart] = useState(false);
-
   function addAnimation() {
     if (scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
-      // Clone the items to create an infinite scroll effect
+      // Clone the items multiple times for seamless loop
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
         if (scrollerRef.current) {
@@ -59,40 +60,68 @@ export const InfiniteMovingCards = ({
     if (scrollerRef.current) {
       scrollerRef.current.style.setProperty(
         "--animation-duration",
-        speed === "fast" ? "25s" : speed === "normal" ? "25s" : "25s"
+        speed === "fast" ? "20s" : speed === "normal" ? "30s" : "40s"
       );
     }
   };
 
+  const SkillCard = ({ item }: { item: { name: string; img: string; quote: string } }) => (
+    <li className="group relative w-32 h-32 flex-shrink-0">
+      {/* Card Container */}
+      <div
+        className="relative w-full h-full rounded-2xl border border-white/[0.1] bg-black-100 hover:border-purple/50 transition-all duration-300 hover:shadow-[0_0_30px_rgba(203,172,249,0.3)] flex items-center justify-center p-4 overflow-hidden hover:scale-110"
+        style={{
+          background: "rgb(4,7,29)",
+          backgroundColor:
+            "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        }}
+      >
+        {/* Skill Icon */}
+        <img
+          src={item.img}
+          alt={item.name}
+          className="w-20 h-20 object-contain relative z-10 group-hover:scale-110 transition-transform duration-300"
+        />
+
+        {/* Decorative Corner */}
+        <div className="absolute top-0 right-0 w-16 h-16 bg-purple/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
+
+      {/* Skill Name Tooltip */}
+      <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-50">
+        <span className="text-white text-sm font-medium whitespace-nowrap bg-purple/90 px-3 py-1.5 rounded-lg shadow-lg">
+          {item.name}
+        </span>
+      </div>
+    </li>
+  );
+
   return (
-    <ul
-      ref={scrollerRef}
-      className={cn(
-        "flex min-w-full shrink-0 gap-10 py-4 w-max flex-nowrap overflow-hidden relative",
-        start && "animate-scroll",
-        pauseOnHover && "hover:[animation-play-state:paused]",
-        className
-      )}
-      style={{
-        display: "flex",
-        animation: `scroll var(--animation-duration, 40s) linear infinite`,
-        animationDirection: "var(--animation-direction, normal)",
-        whiteSpace: "nowrap",
-      }}
+    <div
+      ref={containerRef}
+      className="relative w-full overflow-x-hidden pb-16"
+      onMouseEnter={() => pauseOnHover && setIsPaused(true)}
+      onMouseLeave={() => pauseOnHover && setIsPaused(false)}
     >
-      {items.map((item, idx) => (
-        <li
-          className="w-[120px] h-[120px] flex justify-center items-center flex-shrink-0"
-          key={idx}
-          style={{ background: "transparent" }}
-        >
-          <img
-            src={item.img}
-            alt="profile-img"
-            className="w-full h-full object-contain pl-300 pr-300"
-          />
-        </li>
-      ))}
-    </ul>
+      <ul
+        ref={scrollerRef}
+        className={cn(
+          "flex min-w-full shrink-0 gap-8 py-4 w-max flex-nowrap",
+          className
+        )}
+        style={{
+          display: "flex",
+          animation: start
+            ? `scroll var(--animation-duration, 40s) linear infinite`
+            : "none",
+          animationDirection: "var(--animation-direction, normal)",
+          animationPlayState: isPaused ? "paused" : "running",
+        }}
+      >
+        {items.map((item, idx) => (
+          <SkillCard key={`original-${idx}`} item={item} />
+        ))}
+      </ul>
+    </div>
   );
 };
