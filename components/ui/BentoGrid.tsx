@@ -156,28 +156,29 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10",
+            id === 1 && "bg-black/60 backdrop-blur-sm rounded-2xl"
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className={`font-sans font-extralight md:text-xs lg:text-base text-sm z-10 ${
-            id === 1 ? 'text-white-100 md:max-w-lg mb-3' : 'text-[#C1C2D3] md:max-w-32'
+          <div className={`font-sans z-10 ${
+            id === 1 ? 'text-white font-semibold md:text-sm lg:text-lg text-base md:max-w-lg mb-3 drop-shadow-lg' : 'font-extralight text-[#C1C2D3] md:text-xs lg:text-base text-sm md:max-w-32'
           }`}>
             {description}
           </div>
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans font-bold z-10 ${
+            className={`font-sans z-10 ${
               id === 1 
-                ? 'text-2xl lg:text-4xl max-w-2xl' 
-                : 'text-lg lg:text-3xl max-w-96'
+                ? 'text-2xl lg:text-5xl max-w-2xl font-black drop-shadow-2xl' 
+                : 'font-bold text-lg lg:text-3xl max-w-96'
             }`}
           >
             {id === 1 && typeof title === 'string' ? (
               <>
                 {title.split('communication and effective collaboration')[0]}
-                <span className="text-purple">communication and effective collaboration</span>
+                <span className="text-purple drop-shadow-[0_0_15px_rgba(139,92,246,0.8)]">communication and effective collaboration</span>
               </>
             ) : (
               title
