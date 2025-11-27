@@ -148,6 +148,15 @@
     }
   }
 
+  @keyframes scroll-reverse {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   /* Vertical scroll animations for skill boxes */
   @keyframes scroll-down {
     0% {

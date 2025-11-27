@@ -118,9 +118,8 @@ export const InfiniteMovingCards = ({
         style={{
           display: "flex",
           animation: start
-            ? `scroll ${speed === "fast" ? "10s" : speed === "normal" ? "10s" : "25s"} linear infinite`
+            ? `${direction === "left" ? "scroll" : "scroll-reverse"} ${speed === "fast" ? "10s" : speed === "normal" ? "10s" : "25s"} linear infinite`
             : "none",
-          animationDirection: direction === "left" ? "normal" : "reverse",
           animationPlayState: isPaused ? "paused" : "running",
         }}
       >
