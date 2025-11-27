@@ -1,10 +1,24 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { workExperience } from "@/data";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Experience = () => {
   const [selectedExperience, setSelectedExperience] = useState<number | null>(null);
+
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    if (selectedExperience !== null) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    // Cleanup on unmount
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [selectedExperience]);
 
   return (
     <div className="py-20 w-full">

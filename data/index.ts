@@ -77,7 +77,14 @@ export const projects = [
     des: "Developed a transformer based stock price/trend prediction model and Confidence + Recommendation using T5-flan.",
     img: "/stock.png",
     iconLists: ["https://upload.wikimedia.org/wikipedia/commons/9/99/Pytorch-svgrepo-com.svg", "/hf-logo.svg", "/flask.png", "https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "/stream.svg"],
+    iconNames: ["PyTorch", "HuggingFace", "Flask", "Python", "Streamlit"],
     link: "https://github.com/GSL006/Stock-Predictor-v2",
+    details: [
+      "Collected historical OHLC price data for the top 50 stocks using yFinance and retrieved real-time news sentiment via Alpaca News API; engineered a unified dataset combining 7-day rolling price windows with corresponding FinBERT sentiment scores.",
+      "Designed and implemented a Transformer-based model (PyTorch) for next-day price prediction, achieving 79% accuracy within a ±$3 threshold; applied LoRA fine-tuning on Flan-T5 to output interpretability metrics and confidence-weighted trading recommendations.",
+      "Served the model through a Flask REST API supporting batch prediction requests and real-time inference; created a Streamlit dashboard displaying live predictions, model confidence, sentiment trends, and interactive visualization of attention weights.",
+      "Conducted hyperparameter tuning (learning rate, head count, dropout), performed ablation studies on sentiment versus price-only input, and benchmarked against baseline models, delivering detailed evaluation metrics and confusion matrix heatmaps."
+    ],
   },
   {
     id: 2,
@@ -85,23 +92,45 @@ export const projects = [
     des: "Engineered an automated micro-trend detection pipeline processing 20-50 AI news articles hourly, clustering with HDBSCAN and scoring microtrends via time-decay velocity",
     img: "/mic_trend.png",
     iconLists: ["https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg", "./git.svg", "/gnews.png", "/hackernews.png", "/hf-logo.svg"],
+    iconNames: ["Python", "GitHub Actions", "GNews API", "Hacker News API", "HuggingFace"],
     link: "https://github.com/GSL006/AI_Micro_Trend_Hunter",
+    details: [
+      "Engineered an automated trend-spotting pipeline scraping 20-50 AI-related articles per hour from Google News and Hacker News, embedding headlines using Sentence Transformers, clustering emerging topics via HDBSCAN.",
+      "Calculated micro-trend velocity by tracking cluster growth over time using time-decay weighting; assigned a velocity score to each cluster, triggering alerts for clusters with ≥ 3 new articles and velocity ≥ 0.5.",
+      "Fully deployed via GitHub Actions for hourly execution on zero-cost infrastructure; alerts are pushed to a Telegram channel with cluster summary, sample headlines, and sentiment snapshot.",
+      "Achieved robust data logging and modular design—scraping, embedding, clustering, scoring, and alerting are decoupled—allowing easy extension to new sources and tuning of alert sensitivity thresholds."
+    ],
   },
   {
     id: 3,
     title: "Location Based Reminder",
-    des: "Developed a web app that triggers reminders based on user location. Users set reminders with title, description, and coordinates, receiving email alerts when within 100 meters. Built with HTML, CSS, JavaScript, Leaflet.js for mapping, jQuery for interactivity, and Go for backend. Future updates may include Google's API for more accurate coordinates.",
+    des: "Developed a web app that triggers reminders based on user location. Users set reminders with title, description, and coordinates, receiving email alerts when within 100 meters.",
     img: "/go.png",
     iconLists: ["https://upload.wikimedia.org/wikipedia/commons/0/05/Go_Logo_Blue.svg", "/js.svg", "/jq.svg", "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg", "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"],
+    iconNames: ["GoLang", "JavaScript", "jQuery", "HTML5", "CSS3"],
     link: "https://github.com/GSL006/Location-Based-Reminder",
+    details: [
+      "Developed a geofencing web app where users specify reminders with title, description, and GPS coordinates; the frontend uses Leaflet.js for map-based point selection and dynamic UI interaction via jQuery.",
+      "Implemented Go backend to receive user-defined geofences, periodically check active user locations against stored zones, and trigger event-generation logic when users enter a 100m radius.",
+      "Set up automated email notifications via SMTP to users upon geofence entry, ensuring delivery reliability and retry logic.",
+      "Designed the system for scalability and ease of extension—backend separates reminder storage, location polling, geofence evaluation, and notification dispatch into modular Go services."
+    ],
   },
   {
     id: 4,
     title: "DriveIO",
-    des: "The platform is a car rental solution where users sign up as owners to rent out cars or as customers to book them. Built with Next.js, MySQL, Node.js, and Express.js, it features secure Firebase authentication and PayPal integration for payments, offering a smooth, user-friendly, and efficient experience for all.",
+    des: "The platform is a car rental solution where users sign up as owners to rent out cars or as customers to book them. Built with Next.js, MySQL, Node.js, and Express.js.",
     img: "/driveio.png",
     iconLists: ["/next.svg", "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg", "/sql.svg", "/firebase.svg", "https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"],
+    iconNames: ["Next.js", "Node.js", "MySQL", "Firebase", "PayPal"],
     link: "https://github.com/GSL006/DriveIO",
+    details: [
+      "Created a full-stack car rental platform enabling vehicle owners to list and renters to book, featuring dynamic multi-step listing and booking workflows, personalized dashboards, and robust user authentication.",
+      "Designed relational schema with MySQL, implemented payment flows via PayPal API and secured session management with Firebase Auth.",
+      "Developed Express.js REST endpoints for listing creation, booking management, and availability search; optimized query performance using indexing and pagination.",
+      "Built an admin dashboard for managing listings, tracking rental history, analyzing income trends, and exporting CSV reports; implemented SQL aggregation queries for daily, monthly, and year-to-date revenue tracking.",
+      "Integrated Firebase Cloud Messaging for real-time booking notifications to owners and renters, improving engagement and response time."
+    ],
   },
 ];
 
