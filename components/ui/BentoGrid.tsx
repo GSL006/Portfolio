@@ -114,7 +114,7 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            id === 1 && img.endsWith('.mp4') ? (
+            (id === 1 || id === 5) && img.endsWith('.mp4') ? (
               <video
                 autoPlay
                 loop
@@ -125,11 +125,11 @@ export const BentoGridItem = ({
                 <source src={img} type="video/mp4" />
               </video>
             ) : (
-              <img
-                src={img}
-                alt={img}
-                className={cn(imgClassName, "object-cover object-center ")}
-              />
+            <img
+              src={img}
+              alt={img}
+              className={cn(imgClassName, "object-cover object-center ")}
+            />
             )
           )}
         </div>
@@ -157,12 +157,15 @@ export const BentoGridItem = ({
           className={cn(
             titleClassName,
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10",
-            id === 1 && "bg-black/40 backdrop-blur-md rounded-2xl -ml-2 -mr-2 md:-ml-4 md:-mr-4"
+            id === 1 && "bg-black/40 backdrop-blur-md rounded-2xl -ml-2 -mr-2 md:-ml-4 md:-mr-4",
+            id === 5 && "bg-black/60 rounded-2xl -ml-2 -mr-2 md:-ml-4 md:-mr-4"
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
           <div className={`font-sans z-10 ${
-            id === 1 ? 'text-gray-300 font-semibold md:text-sm lg:text-lg text-base md:max-w-lg mb-3 drop-shadow-lg' : 'font-extralight text-[#C1C2D3] md:text-xs lg:text-base text-sm md:max-w-32'
+            id === 1 ? 'text-gray-300 font-semibold md:text-sm lg:text-lg text-base md:max-w-lg mb-3 drop-shadow-lg' : 
+            id === 5 ? 'text-gray-300 font-semibold md:text-sm lg:text-base text-sm mb-2 drop-shadow-lg' :
+            'font-extralight text-[#C1C2D3] md:text-xs lg:text-base text-sm md:max-w-32'
           }`}>
             {description}
           </div>
@@ -172,6 +175,8 @@ export const BentoGridItem = ({
             className={`font-sans z-10 ${
               id === 1 
                 ? 'text-2xl lg:text-5xl max-w-2xl font-black drop-shadow-2xl' 
+                : id === 5
+                ? 'text-2xl lg:text-4xl font-bold drop-shadow-2xl'
                 : 'font-bold text-lg lg:text-3xl max-w-96'
             }`}
           >
@@ -234,9 +239,9 @@ export const BentoGridItem = ({
               {/* add handleCopy() for the copy the text */}
               {copied && (
                 <div className="absolute -bottom-5 right-0">
-                  {/* <img src="/confetti.gif" alt="confetti" /> */}
-                  <Lottie options={defaultOptions} height={200} width={400} />
-                </div>
+                {/* <img src="/confetti.gif" alt="confetti" /> */}
+                <Lottie options={defaultOptions} height={200} width={400} />
+              </div>
               )}
 
               <MagicButton

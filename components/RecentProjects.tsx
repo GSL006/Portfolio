@@ -47,17 +47,32 @@ const RecentProjects = () => {
                 "linear-gradient(135deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
             }}
           >
-            {/* Project Image */}
             <div className="relative w-full h-64 overflow-hidden bg-[#13162D]">
-              <motion.img
-                src={item.img}
-                alt={item.title}
-                className="w-full h-full object-cover"
-                animate={{
-                  scale: hoveredProject === item.id ? 1.05 : 1,
-                }}
-                transition={{ duration: 0.3 }}
-              />
+              {item.img.endsWith('.mp4') ? (
+                <motion.video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                  animate={{
+                    scale: hoveredProject === item.id ? 1.05 : 1,
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <source src={item.img} type="video/mp4" />
+                </motion.video>
+              ) : (
+                <motion.img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-full object-cover"
+                  animate={{
+                    scale: hoveredProject === item.id ? 1.05 : 1,
+                  }}
+                  transition={{ duration: 0.3 }}
+                />
+              )}
               
               {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-black-100 via-transparent to-transparent opacity-60" />
@@ -175,13 +190,25 @@ const RecentProjects = () => {
                   .filter((proj) => proj.id === selectedProject)
                   .map((proj) => (
                     <div key={proj.id}>
-                      {/* Project Image */}
+                      {/* Project Image/Video */}
                       <div className="relative w-full h-64 overflow-hidden rounded-t-2xl bg-[#13162D]">
-                        <img
-                          src={proj.img}
-                          alt={proj.title}
-                          className="w-full h-full object-cover"
-                        />
+                        {proj.img.endsWith('.mp4') ? (
+                          <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="w-full h-full object-cover"
+                          >
+                            <source src={proj.img} type="video/mp4" />
+                          </video>
+                        ) : (
+                          <img
+                            src={proj.img}
+                            alt={proj.title}
+                            className="w-full h-full object-cover"
+                          />
+                        )}
                         <div className="absolute inset-0 bg-gradient-to-t from-black-100 via-transparent to-transparent" />
                       </div>
 

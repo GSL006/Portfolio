@@ -470,7 +470,7 @@ const GithubContributions: React.FC = () => {
                   height={7 * DAY_HEIGHT + TOP_PADDING + 20}
                   viewBox={`0 0 ${sortedWeeks.length * WEEK_WIDTH + LEFT_PADDING + 20} ${7 * DAY_HEIGHT + TOP_PADDING + 20}`}
                   className="overflow-visible"
-                  style={{ minWidth: '800px' }}
+                  style={{ minWidth: '800px', willChange: 'auto' }}
                 >
                   {/* Month labels */}
                   {monthPositions.map((m, idx) => (
@@ -528,7 +528,8 @@ const GithubContributions: React.FC = () => {
                             fill={getColor(day.intensity)}
                             data-count={day.count}
                             data-date={day.date}
-                            className="transition-all duration-200 cursor-pointer hover:opacity-80"
+                            className="cursor-pointer hover:opacity-80"
+                            style={{ transition: 'opacity 0.2s ease' }}
                             onMouseOver={(e) => handleMouseOver(e, day)}
                             onMouseMove={handleMouseMove}
                             onMouseOut={handleMouseOut}
@@ -550,8 +551,9 @@ const GithubContributions: React.FC = () => {
                                 style={{
                                   filter: isHead 
                                     ? 'drop-shadow(0 0 12px rgba(139, 92, 246, 1))' 
-                                    : `drop-shadow(0 0 6px rgba(139, 92, 246, ${0.3 + (positionInSnake / pathArray.length) * 0.7}))`,
-                                  opacity: 0.4 + (positionInSnake / pathArray.length) * 0.6,
+                                    : 'drop-shadow(0 0 6px rgba(139, 92, 246, 0.7))',
+                                  opacity: isHead ? 1 : 0.6 + (positionInSnake / pathArray.length) * 0.4,
+                                  willChange: 'opacity',
                                 }}
                               />
                               {/* Brighter fill for head */}
@@ -564,7 +566,7 @@ const GithubContributions: React.FC = () => {
                                   rx={3}
                                   ry={3}
                                   fill="rgba(139, 92, 246, 0.3)"
-                                  className="pointer-events-none animate-pulse"
+                                  className="pointer-events-none"
                                 />
                               )}
                             </>
