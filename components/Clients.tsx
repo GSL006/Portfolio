@@ -1,14 +1,12 @@
 "use client";
 
 import React from "react";
-import { Skills } from "@/data";
+import { getProcessedSkills } from "@/lib/store/skillsStore";
 import { InfiniteMovingCards } from "./ui/InfiniteCards";
 
 const Clients = () => {
-  // Split skills into two rows for dynamic effect
-  const midPoint = Math.ceil(Skills.length / 2);
-  const firstRow = Skills.slice(0, midPoint);
-  const secondRow = Skills.slice(midPoint);
+  // Get processed skills from cache store - computed once, reused everywhere
+  const { firstRow, secondRow } = getProcessedSkills();
 
   return (
     <section id="Skills" className="py-20 w-full">

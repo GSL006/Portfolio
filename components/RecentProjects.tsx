@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { FaLocationArrow } from "react-icons/fa6";
 import { projects } from "@/data";
 import { motion, AnimatePresence } from "framer-motion";
+import { OptimizedVideo } from "@/components/ui/OptimizedVideo";
 
 const RecentProjects = () => {
   const [selectedProject, setSelectedProject] = useState<number | null>(null);
@@ -49,19 +50,15 @@ const RecentProjects = () => {
           >
             <div className="relative w-full h-64 overflow-hidden bg-[#13162D]">
               {item.img.endsWith('.mp4') ? (
-                <motion.video
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
+                <OptimizedVideo
+                  src={item.img}
                   className="w-full h-full object-cover"
+                  asMotion={true}
                   animate={{
                     scale: hoveredProject === item.id ? 1.05 : 1,
                   }}
                   transition={{ duration: 0.3 }}
-                >
-                  <source src={item.img} type="video/mp4" />
-                </motion.video>
+                />
               ) : (
                 <motion.img
                   src={item.img}
@@ -193,15 +190,10 @@ const RecentProjects = () => {
                       {/* Project Image/Video */}
                       <div className="relative w-full h-64 overflow-hidden rounded-t-2xl bg-[#13162D]">
                         {proj.img.endsWith('.mp4') ? (
-                          <video
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
+                          <OptimizedVideo
+                            src={proj.img}
                             className="w-full h-full object-cover"
-                          >
-                            <source src={proj.img} type="video/mp4" />
-                          </video>
+                          />
                         ) : (
                           <img
                             src={proj.img}

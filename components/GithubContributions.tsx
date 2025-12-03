@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { githubContributions } from "@/data";
+import { useJSAnimationPauseOnLeave } from "@/lib/hooks/useAnimationPauseOnLeave";
 
 interface Contribution {
   date: string;
@@ -28,6 +29,9 @@ const GithubContributions: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [tooltip, setTooltip] = useState<{ text: string; x: number; y: number } | null>(null);
   const [animatedPath, setAnimatedPath] = useState<Set<string>>(new Set());
+
+  // Get visibility state for pausing animation
+  const { elementRef: containerRef, isVisible } = useJSAnimationPauseOnLeave();
 
   useEffect(() => {
     const fetchContributions = async (): Promise<void> => {
@@ -313,7 +317,7 @@ const GithubContributions: React.FC = () => {
     return () => {
       clearInterval(intervalId);
     };
-  }, [contributionData.contributions]);
+  }, [contributionData.contributions, isVisible]);
 
   // Constants for grid layout
   const CELL = 14;
@@ -403,7 +407,7 @@ const GithubContributions: React.FC = () => {
   };
 
   return (
-    <div className="py-20 w-full" id="github">
+    <div ref={containerRef} className="py-20 w-full" id="github">
       <div className="w-full mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6">
