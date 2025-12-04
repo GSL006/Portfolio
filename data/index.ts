@@ -287,7 +287,7 @@ export const education = [
   {
     id: 1,
     degree: "Bachelor of Technology",
-    field: "Computer Science",
+    field: "Computer Science & Engineering",
     institution: "PES University",
     location: "Bangalore, Karnataka",
     duration: "Sep 2022 - Present",
