@@ -343,6 +343,19 @@ export const workExperience = [
   },
   {
     id: 3,
+    title: "Data Structures and Algorithms Teaching Assistant Head",
+    desc: "July 2025 - November 2025 @ PES University",
+    className: "md:col-span-2",
+    thumbnail: "/pes.png",
+    details: [
+      "Lead a team of teaching assistants in supporting DSA course.",
+      "Conduct weekly lab sessions and doubt-clearing workshops.",
+      "Design and grade assignments, quizzes, and coding assessments.",
+      "Mentor students on algorithm optimization and problem-solving techniques."
+    ],
+  },
+  {
+    id: 4,
     title: "Back-End Developer",
     desc: "March 2025 - Present @ GoQuant",
     className: "md:col-span-2",
@@ -354,20 +367,6 @@ export const workExperience = [
       "Maintain and expand GQ-Docs, the core documentation platform for GoQuant, by adding detailed OTC exchange integrations, improving clarity and structure, and continuously updating it with new features and products introduced into the ecosystem."
     ],
   },
-  {
-    id: 4,
-    title: "Data Structures and Algorithms Teaching Assistant Head",
-    desc: "July 2025 - Present @ PES University",
-    className: "md:col-span-2",
-    thumbnail: "/pes.png",
-    details: [
-      "Lead a team of teaching assistants in supporting DSA course.",
-      "Conduct weekly lab sessions and doubt-clearing workshops.",
-      "Design and grade assignments, quizzes, and coding assessments.",
-      "Mentor students on algorithm optimization and problem-solving techniques."
-    ],
-  },
-
 ];
 
 export const socialMedia = [
